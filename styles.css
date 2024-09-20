@@ -4,6 +4,20 @@
   padding: 0;
 }
 
+/* Styles for contact page */
+
+.contactPageWrapper {
+  display: grid;
+  grid-template-columns: 1 1fr;
+}
+
+@media screen and (min-width: 481px) {
+  .contactPageWrapper {
+    display: grid;
+    grid-template-columns: repeat(1 1f);
+  }
+}
+
 body {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -163,6 +177,62 @@ button {
 }
 
 button:hover {
+  opacity: 0.85;
+}
+
+*.dark-mode {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+
+.heroContainer {
+  display: grid;
+  grid-column: 1;
+  margin: 50px;
+  gap: 5px;
+}
+
+.image {
+  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
+  width: 100%;
+}
+.image:hover {
+  transform: scale(0.97);
+  opacity: 0.85;
+}
+h1:hover {
+  border-radius: 7px;
+}
+.about_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#darkModeToggle {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: rgb(43, 136, 136);
+  color: white;
+}
+
+button:hover {
   background-color: #ffff;
   color: black;
+}
+
+/* Styles for contact page */
+
+.contactPageWrapper {
+  display: grid;
+  grid-template-columns: 1 1fr;
+}
+
+@media screen and (min-width: 481px) {
+  .contactPageWrapper {
+    display: grid;
+    grid-template-columns: repeat(1 1f);
+  }
 }
