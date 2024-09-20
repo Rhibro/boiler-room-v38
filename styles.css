@@ -4,20 +4,6 @@
   padding: 0;
 }
 
-/* Styles for contact page */
-
-.contactPageWrapper {
-  display: grid;
-  grid-template-columns: 1 1fr;
-}
-
-@media screen and (min-width: 481px) {
-  .contactPageWrapper {
-    display: grid;
-    grid-template-columns: repeat(1 1f);
-  }
-}
-
 body {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -139,16 +125,44 @@ button:hover {
   color: black;
 }
 
-/* Styles for contact page */
+
+/* Alice styling for contact page starts */
 
 .contactPageWrapper {
   display: grid;
   grid-template-columns: 1 1fr;
 }
 
-@media screen and (min-width: 481px) {
-  .contactPageWrapper {
+@media screen and (min-width: 480px) {
+  .contactPageMain {
     display: grid;
-    grid-template-columns: repeat(1 1f);
+    grid-template-areas:
+    "text form";
   }
 }
+
+  @media screen and (min-width: 480px) {
+    .contactPageMain {
+      display: grid;
+      grid-template-areas:
+      "text form";
+  }
+}
+
+  @media screen and (min-width: 768px) {
+      .contactPageMain {
+        display: grid;
+        grid-template-areas:
+        "text form";
+  }
+}
+
+  @media screen and (min-width: 1024px) {
+    .contactPageMain {
+      display: grid;
+      grid-template-areas:
+      "text form";
+  }
+}
+
+/* Alice styling contact page ends */
