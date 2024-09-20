@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Välkommen till vårt team" />
     <meta property="og:description" content="Välkommen till vårt team" />
+    <link rel="icon" type="image/x-icon" href="boiler-room-v38favi.ico" />
     <meta property="twitter:description" content="Välkommen till vårt team" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,8 +18,7 @@
     <title>Hem</title>
   </head>
   <body>
-    <!--Antons navbar-->
-    <header>
+       <header>
       <nav>
         <ul class="nav-bar">
           <li><a href="#hem">Hem</a></li>
@@ -28,16 +28,30 @@
         </ul>
       </nav>
     </header>
-
-    <!--Slut på Antons navbar-->
-
-    <main>
-      <h1>Hello World</h1>
-      <article>There should be text here</article>
-      <button>
-        <a>hej</a>
-      </button>
+    <button id="darkModeToggle">toggle darkmode</button>
+    <main class="heroContainer">
+      <h1 tabindex="0" class="about_us">Information om oss</h1>
+      <img
+        tabindex="0"
+        class="image"
+        src="https://images.pexels.com/photos/3289167/pexels-photo-3289167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="group image"
+      />
     </main>
     <footer>this is the foot</footer>
   </body>
+  <script>
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    if (localStorage.getItem("darkMode") === "enabled") {
+      document.body.classList.add("dark-mode");
+    }
+    darkModeToggle.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+      } else {
+        localStorage.removeItem("darkMode");
+      }
+    });
+  </script>
 </html>
