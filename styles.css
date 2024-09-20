@@ -36,10 +36,6 @@ body {
   --third: rgb(213, 201, 201);
 }
 
-main {
-  height: 9876px;
-}
-
 header {
   position: sticky;
   top: 0;
