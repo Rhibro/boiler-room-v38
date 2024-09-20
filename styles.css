@@ -133,6 +133,8 @@ button:hover {
   grid-template-columns: 1 1fr;
 }
 
+.c
+
 @media screen and (min-width: 480px) {
   .contactPageMain {
     display: grid;
