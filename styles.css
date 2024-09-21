@@ -2,23 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Styles for contact page */
-
-.contactPageWrapper {
-  display: grid;
-  grid-template-columns: 1 1fr;
-}
-
-@media screen and (min-width: 481px) {
-  .contactPageWrapper {
-    display: grid;
-    grid-template-columns: repeat(1 1f);
-  }
 }
 
 body {
@@ -31,6 +14,49 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
+
+
+/* Antons navbar + footer */
+:root {
+  --main: blue;
+  --secondary: black;
+  --third: rgb(213, 201, 201);
+}
+
+.nav-bar {
+  background-color: var(--main);
+  height: 2rem;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--secondary);
+  margin: 0rem 2rem 0.2rem 2rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.nav-bar a:hover {
+  background-color: var(--secondary);
+  color: var(--third);
+}
+
+footer {
+  background-color: var(--main);
+  width: 100%;
+  height: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* Slut Antons navbar + footer */
 
 /*  button styles */
 
@@ -99,16 +125,44 @@ button:hover {
   color: black;
 }
 
-/* Styles for contact page */
+
+/* Alice styling for contact page starts */
 
 .contactPageWrapper {
   display: grid;
   grid-template-columns: 1 1fr;
 }
 
-@media screen and (min-width: 481px) {
-  .contactPageWrapper {
+@media screen and (min-width: 480px) {
+  .contactPageMain {
     display: grid;
-    grid-template-columns: repeat(1 1f);
+    grid-template-areas:
+    "text form";
   }
 }
+
+  @media screen and (min-width: 480px) {
+    .contactPageMain {
+      display: grid;
+      grid-template-areas:
+      "text form";
+  }
+}
+
+  @media screen and (min-width: 768px) {
+      .contactPageMain {
+        display: grid;
+        grid-template-areas:
+        "text form";
+  }
+}
+
+  @media screen and (min-width: 1024px) {
+    .contactPageMain {
+      display: grid;
+      grid-template-areas:
+      "text form";
+  }
+}
+
+/* Alice styling contact page ends */
