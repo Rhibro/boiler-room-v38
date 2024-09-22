@@ -135,6 +135,7 @@ button:hover {
 
 @media screen and (min-width: 480px) {
   .contactPageMain {
+  .contactPageWrapper {
     display: grid;
     grid-template-areas:
     "text form";
@@ -143,6 +144,7 @@ button:hover {
 
   @media screen and (min-width: 480px) {
     .contactPageMain {
+    .contactPageWrapper {
       display: grid;
       grid-template-areas:
       "text form";
@@ -151,6 +153,7 @@ button:hover {
 
   @media screen and (min-width: 768px) {
       .contactPageMain {
+    .contactPageWrapper {
         display: grid;
         grid-template-areas:
         "text form";
@@ -159,6 +162,7 @@ button:hover {
 
   @media screen and (min-width: 1024px) {
     .contactPageMain {
+    .contactPageWrapper {
       display: grid;
       grid-template-areas:
       "text form";
