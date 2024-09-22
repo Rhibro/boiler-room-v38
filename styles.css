@@ -168,3 +168,111 @@ button:hover {
 }
 
 /* Alice styling contact page ends */
+
+/* Rhi Katter styling begins */
+
+.katter-title {
+  font-size: 50px;
+  line-height: 55px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow:  5px 5px 5px rgb(40, 39, 39);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;   
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+
+
+.card{
+  text-shadow:  2px 2px 2px rgb(40, 39, 39);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 2rem;
+  border: 7px solid white;
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  cursor: default;
+}
+
+.cardOne:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/luna.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cardTwo:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/loki.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cardThree:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/coco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cardFour:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/charlie.jpg);
+  background-size: cover;
+}
+.cardFive:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/milo.jpg);
+  background-size: cover;
+}
+.cardSix:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/bella.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  
+  .card {
+    height: 15rem;
+    width: 15rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  
+  .katter-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+}
+
+/* Rhi Katter styling begins */
