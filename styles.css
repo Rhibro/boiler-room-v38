@@ -133,8 +133,9 @@ button:hover {
   grid-template-columns: 1 1fr;
 }
 
+.c
+
 @media screen and (min-width: 480px) {
-  .contactPageMain {
   .contactPageWrapper {
     display: grid;
     grid-template-areas:
@@ -143,7 +144,6 @@ button:hover {
 }
 
   @media screen and (min-width: 480px) {
-    .contactPageMain {
     .contactPageWrapper {
       display: grid;
       grid-template-areas:
@@ -152,7 +152,6 @@ button:hover {
 }
 
   @media screen and (min-width: 768px) {
-      .contactPageMain {
     .contactPageWrapper {
         display: grid;
         grid-template-areas:
@@ -161,7 +160,6 @@ button:hover {
 }
 
   @media screen and (min-width: 1024px) {
-    .contactPageMain {
     .contactPageWrapper {
       display: grid;
       grid-template-areas:
