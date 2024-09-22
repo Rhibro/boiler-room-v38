@@ -255,5 +255,22 @@ button:hover {
   background-position: center;
 }
 
+@media (max-width: 768px) {
+  
+  .card {
+    height: 15rem;
+    width: 15rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  
+  .katter-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+}
 
 /* Rhi Katter styling begins */
