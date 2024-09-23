@@ -429,7 +429,6 @@ button:hover {
 
 .image1box {
   grid-area: image1;
-  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
 }
@@ -440,7 +439,6 @@ button:hover {
 
 .image2box {
   grid-area: image2;
-  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
   
@@ -451,7 +449,6 @@ button:hover {
 
 .image3box {
   grid-area: image3;
-  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
  
@@ -462,7 +459,6 @@ button:hover {
 
 .image4box {
   grid-area: image4;
-  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
  
@@ -473,7 +469,6 @@ button:hover {
 
 .image5box {
   grid-area: image5;
-  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
   
@@ -533,6 +528,7 @@ p {
 
   .grid-container{ 
     display: flex;
+    margin: 0;
     flex-direction: column;
     justify-content: center;
   }
