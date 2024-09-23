@@ -139,6 +139,7 @@ button:hover {
     grid-template-areas:
     "text form";
   }
+  
 }
 
   @media screen and (min-width: 480px) {
@@ -169,47 +170,83 @@ button:hover {
 
 /* Abbas om oss styling */
 
-.Omossh1 {text-align: center;}
+.Omossh1 {
+  text-align: center;
+  margin: 30px auto;
+  padding: 10px
+}
 
 .grid-container {
   margin: 70px auto;
   display: grid;
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
   grid-template-columns: repeat(2, 200px);
   justify-content: center;
   align-items: center;
   grid-gap: 150px;
   grid-template-areas:
-  "  image1 image2 "
+  " image1 image2 "
   " image3 image4"
   " image5 .     " ;
   
- 
   
+ 
 }
 
 
 .image1box {
   grid-area: image1;
-  cursor: pointer;
-  
- 
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
 }
+
+.image1box:hover {
+  transform: scale(1.2);
+}
+
 .image2box {
   grid-area: image2;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
   
 }
+.image2box:hover {
+  transform: scale(1.2);
+}
+
 .image3box {
   grid-area: image3;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
  
 }
+.image3box:hover {
+  transform: scale(1.2);
+}
+
 .image4box {
   grid-area: image4;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
  
+}
+.image4box:hover {
+  transform: scale(1.2);
 }
 
 .image5box {
   grid-area: image5;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  
+}
+.image5box:hover {
+  transform: scale(1.2);
 }
 
 /* Sektionen för profilen */
@@ -241,7 +278,7 @@ button:hover {
 
 /* Rubrik */
 h2 {
-  color: #a3a2a2;
+  color: rgba(2, 215, 148, 1);
   font-size: 24px;
   margin-bottom: 10px;
   text-align: center;
@@ -249,12 +286,22 @@ h2 {
 
 /* Stark text för frågor */
 strong {
-  color: #c9c9c9;
+  color: rgba(2, 215, 148, 1);
 }
 
 /* Standard paragraf */
 p {
-  color: #aeaeae;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+
+  .grid-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
