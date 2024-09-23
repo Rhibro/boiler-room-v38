@@ -126,46 +126,90 @@ button:hover {
 }
 
 
-/* Alice styling for contact page starts */
+/* Alice contact page styling start */
 
-.contactPageWrapper {
+.contactPageMain {
   display: grid;
-  grid-template-columns: 1 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+        "text"
+        "form"
+        "details";
+  gap: 2rem;
+  padding: 2rem;
 }
 
+.contactForm, .contactDetails {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.5rem solid #000;
+}
+
+/* Styling for text and form */
+.contactText {
+  grid-area: text;
+  font-size: 2rem;
+  h1 {
+    color: white;
+  }
+}
+
+.contactDetails {
+  grid-area: details;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.contactForm {
+  grid-area: form;
+  gap: 1rem;
+}
+
+.contactForm label {
+  font-weight: bold;
+}
+
+.contactForm input, .contactForm textarea .contactForm button {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Layouts */
 @media screen and (min-width: 480px) {
   .contactPageMain {
-    display: grid;
-    grid-template-areas:
-    "text form";
-  }
+    padding: 4rem;
+}
 }
 
-  @media screen and (min-width: 480px) {
-    .contactPageMain {
-      display: grid;
-      grid-template-areas:
-      "text form";
-  }
+@media screen and (min-width: 768px) {
+  .contactPageMain {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium-sized screens */
+    grid-template-areas: 
+      "text form"
+      "details details"; /* Text and form in two columns, details spans both columns */
+}
 }
 
-  @media screen and (min-width: 768px) {
-      .contactPageMain {
-        display: grid;
-        grid-template-areas:
-        "text form";
-  }
-}
 
   @media screen and (min-width: 1024px) {
-    .contactPageMain {
+    .contactPageWrapper {
       display: grid;
       grid-template-areas:
-      "text form";
-  }
+           "text form details"; /* Text in the first column, form in the middle, details in the third column */
+      height: 100%;
+      align-items: stretch;
+      h1 {
+        font-size: 4rem;
+      }
+        }
 }
 
-/* Alice styling contact page ends */
+/* Alice contact page styling ends */
 
 /* Rhi Katter styling begins */
 
