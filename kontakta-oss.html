@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Kontakta Team 3 på Fullstack JavaScript -utbildningen på Chas Academy i Malmö."/>
+    <link rel="icon" type="image/x-icon" href="boiler-room-v38favi.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
     <title>Kontakta oss</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-    </header>
-    <main class="contactPageWrapper">
-        <section class="contactIntroText">
-            <h1>Kontakta oss</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dolore iusto corporis maxime? Obcaecati tenetur modi aut dolorum! Voluptate amet magnam adipisci enim incidunt earum maxime facilis iste error consequatur molestiae maiores eaque ratione culpa voluptates dicta sed, accusamus rem? Ea ipsum ad itaque quidem, fugiat laborum? Exercitationem, animi magnam.</p>
-        </section>
-        <section>
-            <div text>
-                <h2>Fyll i formuläret så kontaktar vi dig</h2>
-                <form action="/submit-form" method="post">
-                    <!-- Fält för namn -->
-                    <label for="name">Namn:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-            
-                    <!-- Fält för företag -->
-                    <label for="company">Företag:</label><br>
-                    <input type="text" id="company" name="company"><br><br>
-            
-                    <!-- Fält för e-mail -->
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-            
-                    <!-- Fält för telefonnummer -->
-                    <label for="phone">Telefonnummer:</label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0701234567"><br><br>
+        <nav>
+          <ul class="nav-bar">
+            <li><a href="/index.html">Hem</a></li>
+            <li><a href="/omoss.html">Om oss</a></li>
+            <li><a href="/katter.html">Cats?</a></li>
+            <li><a href="/kontakta-oss.html">Kontakta oss</a></li>
+          </ul>
+        </nav>
+      </header>
 
-                    <!-- Öppet textfält -->
-                     <label for="message">Meddelande:</label><br>
-                     <textarea id="message" name="message" rows="5" cols="30" placeholder="Skriv ditt meddelande här..." required></textarea><br><br>
+      <main class="contactPageMain">
+            <div class="contactText">
+                <h1>Kontakta teamet</h1>
+                <p>Varmt välkommen att höra av dig till oss i team 3 i Malmö.</p>
+            </div>
+            <form class="contactForm">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" placeholder="Ditt namn" required>
 
-            
-                    <!-- Skicka-knapp -->
-                    <input type="submit" value="Skicka">
-                </form>
-        </div>
-        </section>
+                <label for="email">E-post</label>
+                <input type="email" id="email" name="email" placeholder="Din e-post" required>
 
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message" placeholder="Skriv ditt meddelande" required></textarea>
+
+                <button type="submit">Skicka</button>    
+            </form>
+            <div class="contactDetails">
+                <address>
+                    <h2>Hör av dig via</h2>
+                    Mail: <a href="mailto:team3malmo@chasacademy.se">team3malmo@chasacademy.se</a><br />
+                    Telefon: <a href="tel:+46701234567">+46701-234567</a><br>
+                    <h2>Eller besök oss på</h2>
+                    <a target=_blank href="https://maps.app.goo.gl/giRFvECyyP9F3tiT6">Scandic S:t Jörgen</a><br>
+                    Stora Nygatan 35,<br>
+                    211 37 Malmö
+                </address>
+            </div>
     </main>
 
-
+    <footer>this is the foot</footer>
 
 </body>
 </html>
