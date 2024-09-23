@@ -17,14 +17,15 @@ body {
 
 /* Antons navbar*/
 :root {
-  --main: blue;
-  --secondary: black;
+  --main: #002e1d;
+  --secondary: white;
   --third: rgb(213, 201, 201);
 }
 
 header {
   position: sticky;
   top: 0;
+  color: var(--secondary);
 }
 
 .navbar {
@@ -206,21 +207,21 @@ button:hover {
   color: black;
 }
 
-
 /* Alice contact page styling start */
 
 .contactPageMain {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-        "text"
-        "form"
-        "details";
+  grid-template-areas:
+    "text"
+    "form"
+    "details";
   gap: 2rem;
   padding: 2rem;
 }
 
-.contactForm, .contactDetails {
+.contactForm,
+.contactDetails {
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
@@ -252,7 +253,8 @@ button:hover {
   font-weight: bold;
 }
 
-.contactForm input, .contactForm textarea .contactForm button {
+.contactForm input,
+.contactForm textarea .contactForm button {
   padding: 0.5rem;
   border: 1px solid #000;
   border-radius: 5px;
@@ -264,31 +266,28 @@ button:hover {
 @media screen and (min-width: 480px) {
   .contactPageMain {
     padding: 4rem;
-}
+  }
 }
 
 @media screen and (min-width: 768px) {
   .contactPageMain {
     grid-template-columns: 1fr 1fr; /* Two columns for medium-sized screens */
-    grid-template-areas: 
+    grid-template-areas:
       "text form"
       "details details"; /* Text and form in two columns, details spans both columns */
+  }
 }
 
-}
-
-
-  @media screen and (min-width: 1024px) {
-    .contactPageWrapper {
-      display: grid;
-      grid-template-areas:
-           "text form details"; /* Text in the first column, form in the middle, details in the third column */
-      height: 100%;
-      align-items: stretch;
-      h1 {
-        font-size: 4rem;
-      }
-        }
+@media screen and (min-width: 1024px) {
+  .contactPageWrapper {
+    display: grid;
+    grid-template-areas: "text form details"; /* Text in the first column, form in the middle, details in the third column */
+    height: 100%;
+    align-items: stretch;
+    h1 {
+      font-size: 4rem;
+    }
+  }
 }
 
 /* Alice contact page styling ends */
@@ -298,33 +297,32 @@ button:hover {
 .katter-title {
   font-size: 50px;
   line-height: 55px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
   margin-bottom: 2rem;
   text-align: center;
-  text-shadow:  5px 5px 5px rgb(40, 39, 39);
+  text-shadow: 5px 5px 5px rgb(40, 39, 39);
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   min-height: 100%;
   padding-bottom: 5rem;
 }
 
-
-.card{
-  text-shadow:  2px 2px 2px rgb(40, 39, 39);
+.card {
+  text-shadow: 2px 2px 2px rgb(40, 39, 39);
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 2rem;
   border: 7px solid white;
   border-radius: 20px;
@@ -333,14 +331,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   cursor: default;
 }
 
 .cardOne:hover {
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.1);
   background-image: url(images/luna.jpg);
   background-size: cover;
@@ -348,33 +346,33 @@ button:hover {
 }
 
 .cardTwo:hover {
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.1);
   background-image: url(images/loki.jpg);
   background-size: cover;
   background-position: center;
 }
 .cardThree:hover {
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.1);
   background-image: url(images/coco.jpg);
   background-size: cover;
   background-position: center;
 }
 .cardFour:hover {
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.1);
   background-image: url(images/charlie.jpg);
   background-size: cover;
 }
 .cardFive:hover {
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.1);
   background-image: url(images/milo.jpg);
   background-size: cover;
 }
 .cardSix:hover {
-  transition: .2s;
+  transition: 0.2s;
   transform: scale(1.1);
   background-image: url(images/bella.jpg);
   background-size: cover;
@@ -382,21 +380,17 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  
   .card {
     height: 15rem;
     width: 15rem;
   }
-
 }
 
 @media (max-width: 425px) {
-  
   .katter-title {
     font-size: 45px;
     line-height: 50px;
   }
-
 }
 
 /* Rhi Katter styling begins */
@@ -406,7 +400,7 @@ button:hover {
 .Omossh1 {
   text-align: center;
   margin: 30px auto;
-  padding: 10px
+  padding: 10px;
 }
 
 .grid-container {
@@ -418,14 +412,10 @@ button:hover {
   align-items: center;
   grid-gap: 150px;
   grid-template-areas:
-  " image1 image2 "
-  " image3 image4"
-  " image5 .     " ;
-  
-  
- 
+    " image1 image2 "
+    " image3 image4"
+    " image5 .     ";
 }
-
 
 .image1box {
   grid-area: image1;
@@ -441,7 +431,6 @@ button:hover {
   grid-area: image2;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
-  
 }
 .image2box:hover {
   transform: scale(1.2);
@@ -451,7 +440,6 @@ button:hover {
   grid-area: image3;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
- 
 }
 .image3box:hover {
   transform: scale(1.2);
@@ -461,7 +449,6 @@ button:hover {
   grid-area: image4;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
- 
 }
 .image4box:hover {
   transform: scale(1.2);
@@ -471,7 +458,6 @@ button:hover {
   grid-area: image5;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
-  
 }
 .image5box:hover {
   transform: scale(1.2);
@@ -525,13 +511,10 @@ p {
 }
 
 @media screen and (min-width: 320px) and (max-width: 460px) {
-
-  .grid-container{ 
+  .grid-container {
     display: flex;
     margin: 0;
     flex-direction: column;
     justify-content: center;
   }
-
 }
-
