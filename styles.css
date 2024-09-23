@@ -4,20 +4,6 @@
   padding: 0;
 }
 
-/* Styles for contact page */
-
-.contactPageWrapper {
-  display: grid;
-  grid-template-columns: 1 1fr;
-}
-
-@media screen and (min-width: 481px) {
-  .contactPageWrapper {
-    display: grid;
-    grid-template-columns: repeat(1 1f);
-  }
-}
-
 body {
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -220,16 +206,196 @@ button:hover {
   color: black;
 }
 
-/* Styles for contact page */
 
-.contactPageWrapper {
+/* Alice contact page styling start */
+
+.contactPageMain {
   display: grid;
-  grid-template-columns: 1 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+        "text"
+        "form"
+        "details";
+  gap: 2rem;
+  padding: 2rem;
 }
 
-@media screen and (min-width: 481px) {
-  .contactPageWrapper {
-    display: grid;
-    grid-template-columns: repeat(1 1f);
+.contactForm, .contactDetails {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 0.5rem solid #000;
+}
+
+/* Styling for text and form */
+.contactText {
+  grid-area: text;
+  font-size: 2rem;
+  h1 {
+    color: white;
   }
 }
+
+.contactDetails {
+  grid-area: details;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.contactForm {
+  grid-area: form;
+  gap: 1rem;
+}
+
+.contactForm label {
+  font-weight: bold;
+}
+
+.contactForm input, .contactForm textarea .contactForm button {
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Responsive Layouts */
+@media screen and (min-width: 480px) {
+  .contactPageMain {
+    padding: 4rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .contactPageMain {
+    grid-template-columns: 1fr 1fr; /* Two columns for medium-sized screens */
+    grid-template-areas: 
+      "text form"
+      "details details"; /* Text and form in two columns, details spans both columns */
+}
+}
+
+
+  @media screen and (min-width: 1024px) {
+    .contactPageWrapper {
+      display: grid;
+      grid-template-areas:
+           "text form details"; /* Text in the first column, form in the middle, details in the third column */
+      height: 100%;
+      align-items: stretch;
+      h1 {
+        font-size: 4rem;
+      }
+        }
+}
+
+/* Alice contact page styling ends */
+
+/* Rhi Katter styling begins */
+
+.katter-title {
+  font-size: 50px;
+  line-height: 55px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow:  5px 5px 5px rgb(40, 39, 39);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;   
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+
+
+.card{
+  text-shadow:  2px 2px 2px rgb(40, 39, 39);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 2rem;
+  border: 7px solid white;
+  border-radius: 20px;
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  cursor: default;
+}
+
+.cardOne:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/luna.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cardTwo:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/loki.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cardThree:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/coco.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cardFour:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/charlie.jpg);
+  background-size: cover;
+}
+.cardFive:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/milo.jpg);
+  background-size: cover;
+}
+.cardSix:hover {
+  transition: .2s;
+  transform: scale(1.1);
+  background-image: url(images/bella.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  
+  .card {
+    height: 15rem;
+    width: 15rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  
+  .katter-title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+}
+
+/* Rhi Katter styling begins */
