@@ -195,9 +195,10 @@ button:hover {
 }
 }
 
+
   @media screen and (min-width: 1024px) {
-    .contactPageMain {
-      grid-template-columns: 1fr 1fr 1fr; /* Three columns for larger screens */
+    .contactPageWrapper {
+      display: grid;
       grid-template-areas:
            "text form details"; /* Text in the first column, form in the middle, details in the third column */
       height: 100%;
